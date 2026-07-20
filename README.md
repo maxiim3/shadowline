@@ -1,6 +1,6 @@
 # Shadowline
 
-Prototype jouable d’un jeu d’action-infiltration 2D rétrofuturiste. La V1 ouvre directement sur la **Stealth Lab** : il n’y a ni landing page ni menu marketing.
+Prototype jouable d’un jeu d’action-infiltration 2D rétrofuturiste. La V1 ouvre directement sur **Nightshift**, un immeuble en coupe à caméra fixe : il n’y a ni landing page ni menu marketing.
 
 ## Jouer
 
@@ -14,20 +14,21 @@ Ouvrir ensuite l’URL affichée par Vite.
 ## Contrôles V1
 
 - `A` / `D` : se déplacer
+- `S` : s’accroupir, ramper, ou descendre une échelle
+- `W` : se relever ou monter une échelle / un escalier
 - `Espace` : sauter
-- `Maj` : courir (plus bruyant)
-- `S` : s’accroupir et réduire son exposition
-- `E` : interagir avec le générateur, la porte ou le terminal
-- clic souris : lancer une diversion sonore
-- `R` : recommencer après une mission terminée ou compromise
+- `R` : interagir, ramasser, neutraliser
+- `T` : sortir / ranger l’arme
+- clic droit : viser et tirer quand l’arme est sortie
+- clic gauche : lancer une diversion sonore
 
 ## Boucle jouable
 
-1. Traverser la Stealth Lab sans faire monter la détection.
-2. Couper le courant ou exploiter les zones sombres.
-3. Ouvrir la porte de service.
-4. Récupérer les données au terminal.
-5. Rejoindre l’extraction à droite.
+1. Partir du point A au rez-de-chaussée et atteindre le point B sur le toit.
+2. Lire l’immeuble entier : escalier intérieur, échelles, escalier extérieur, ventilation et porte sécurisée sont autant de routes.
+3. Éviter, distraire ou neutraliser les gardes ; se cacher dans les zones sombres ; couper les caméras si nécessaire.
+4. Récupérer la carte d’accès, utiliser la ventilation, ou contourner par l’extérieur.
+5. Rejoindre la balise d’extraction.
 
 ## Vérifications
 
@@ -40,4 +41,4 @@ npm run build
 
 ## Suite prévue
 
-La spécification complète se trouve dans [plan-jeu-infiltration-2d-react.md](./plan-jeu-infiltration-2d-react.md). La prochaine itération remplacera les formes de prototype par une première passe graphique et améliorera l’IA, la navigation verticale et les interactions contextuelles.
+La spécification complète se trouve dans [plan-jeu-infiltration-2d-react.md](./plan-jeu-infiltration-2d-react.md). La prochaine itération développera les animations, les patterns de patrouille, le son, les objets contextuels et une seconde mission.
