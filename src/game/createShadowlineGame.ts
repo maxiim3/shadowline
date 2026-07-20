@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-import { StealthLabScene } from './scenes/StealthLabScene'
+import { NightshiftScene } from './scenes/NightshiftScene'
 
 const GAME_WIDTH = 1280
 const GAME_HEIGHT = 720
@@ -7,6 +7,7 @@ const GAME_HEIGHT = 720
 export function createShadowlineGame(mountNode: HTMLDivElement): () => void {
   const game = new Phaser.Game({
     type: Phaser.AUTO,
+    pixelArt: true,
     parent: mountNode,
     width: GAME_WIDTH,
     height: GAME_HEIGHT,
@@ -24,7 +25,7 @@ export function createShadowlineGame(mountNode: HTMLDivElement): () => void {
       width: GAME_WIDTH,
       height: GAME_HEIGHT,
     },
-    scene: [StealthLabScene],
+    scene: [NightshiftScene],
   })
 
   return () => {
