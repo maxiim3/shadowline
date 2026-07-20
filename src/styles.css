@@ -29,8 +29,8 @@ body {
   place-items: center;
   overflow: hidden;
   background:
-    radial-gradient(circle at 50% 0%, rgba(40, 151, 178, 0.14), transparent 42rem),
-    #02050d;
+    radial-gradient(circle at 50% 0%, rgba(35, 122, 160, 0.22), transparent 45rem),
+    linear-gradient(180deg, #07101e 0%, #02050d 100%);
 }
 
 .game-shell__canvas {
@@ -41,7 +41,7 @@ body {
 .game-shell__canvas canvas {
   max-width: 100%;
   max-height: 100vh;
-  image-rendering: auto;
+  image-rendering: pixelated;
   outline: none;
 }
 
