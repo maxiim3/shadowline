@@ -16,7 +16,7 @@ export function App() {
 
   return (
     <main className="game-shell">
-      <h1 className="sr-only">Shadowline, prototype d’infiltration 2D</h1>
+      <h1 className="sr-only">Shadowline Nightshift, mission d’infiltration 2D à caméra fixe</h1>
       <div className="game-shell__canvas" ref={mountRef} />
     </main>
   )
